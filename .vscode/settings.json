@@ -1,0 +1,9 @@
+{
+   "reactSnippets.settings.importReactOnTop": false,
+   "editor.defaultFormatter": "svipas.prettier-plus",
+   "editor.formatOnPaste": true,
+   "editor.formatOnSave": true,
+   "[typescriptreact]": {
+      "editor.defaultFormatter": "svipas.prettier-plus"
+   }
+}
