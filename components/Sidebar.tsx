@@ -101,21 +101,14 @@ const Sidebar = () => {
                   ))}
                </>
             )}
-         </div>
 
-         {/* Shared with me */}
-         <div className="flex py-4 flex-col space-y-4 md:max-w-36">
-            {/* My Document */}
-            {groupedData.editor.length === 0 ? (
-               <h2 className="text-gray-500 font-semibold text-sm">
-                  No Shared found
-               </h2>
-            ) : (
+            {/* Shared with me */}
+            {groupedData.editor.length > 0 && (
                <>
                   <h2 className="text-gray-500 font-semibold text-sm">
-                     Shared with me
+                     Shared with Me
                   </h2>
-                  {groupedData.owner.map((doc) => (
+                  {groupedData.editor.map((doc) => (
                      <SidebarOptions
                         key={doc.id}
                         id={doc.id}
