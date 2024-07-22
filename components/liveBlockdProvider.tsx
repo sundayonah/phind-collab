@@ -1,3 +1,5 @@
+'use client';
+
 import { LiveblocksProvider } from '@liveblocks/react/suspense';
 const LiveBlockdProvider = ({ children }: { children: React.ReactNode }) => {
    if (!process.env.NEXT_PUBLIC_LIVEBLOCKS_KEY) {

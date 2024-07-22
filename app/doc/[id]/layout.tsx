@@ -10,6 +10,6 @@ const DocLayout = ({
 }) => {
    auth().protect();
 
-   return <RoomProvider>DocLayout</RoomProvider>;
+   return <div>{children}</div>;
 };
 export default DocLayout;

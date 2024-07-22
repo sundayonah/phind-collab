@@ -13,6 +13,8 @@ const Document = ({ id }: { id: string }) => {
    const [data, loading, error] = useDocumentData(doc(db, 'documents', id));
    // const isOwner = useOwner()
 
+   console.log(id, 'Id from Document');
+
    useEffect(() => {
       if (data) {
          setInput(data.title);

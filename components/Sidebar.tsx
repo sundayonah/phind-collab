@@ -45,6 +45,8 @@ const Sidebar = () => {
          )
    );
 
+   // console.log({ data, user });
+
    useEffect(() => {
       if (!data) return;
 
