@@ -2,7 +2,7 @@
 import { initializeApp, getApps, getApp, App, cert } from 'firebase-admin/app';
 import { getFirestore } from 'firebase-admin/firestore';
 
-const serviceAccount = require('./service_key.json');
+const serviceAccount = require('@/service_key.json');
 
 let app: App;
 
