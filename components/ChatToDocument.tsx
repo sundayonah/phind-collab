@@ -45,7 +45,6 @@ const ChatToDocument = ({ doc }: { doc: Y.Doc }) => {
                }),
             }
          );
-         console.log(res);
          if (res.ok) {
             const { message } = await res.json();
             console.log(message);

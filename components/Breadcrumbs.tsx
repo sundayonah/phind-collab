@@ -16,6 +16,8 @@ const Breadcrumbs = () => {
 
    const segments = pathName.split('/');
 
+   console.log(segments);
+
    return (
       <Breadcrumb>
          <BreadcrumbList>
@@ -26,9 +28,6 @@ const Breadcrumbs = () => {
             {segments.map((seg, index) => {
                if (!seg) return null;
 
-               //   const href = `/${seg.slice(0, (index = 1)).join('/')}`;
-               // Assuming segments is an array of strings representing path segments
-               // const href = `/${segments.slice(0, index).join('/')}/${seg}`;
                const href = `/${segments.slice(0, index + 1).join('/')}`;
                const isLast = index === segments.length - 1;
 
